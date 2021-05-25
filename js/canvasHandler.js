@@ -6,8 +6,8 @@
 // https://editor.p5js.org/codingtrain/sketches/7SjPmXN2
 
 let bubbles = [];
-canvas_w = 600
-canvas_h = 400
+canvas_w = window.innerWidth
+canvas_h = window.innerHeight
 
 function setup() {
     createCanvas(canvas_w, canvas_h);
@@ -55,7 +55,7 @@ function draw() {
 }
 
 function mouseClicked() {
-    
+
 }
 
 class Bubble {
