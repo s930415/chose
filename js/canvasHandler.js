@@ -6,11 +6,25 @@
 // https://editor.p5js.org/codingtrain/sketches/7SjPmXN2
 
 let bubbles = [];
-canvas_w = window.innerWidth
-canvas_h = window.innerHeight
+canvas_w;
+canvas_h;
+
+class exam {
+    constructor(question, option) {
+        this.w = canvas_w - 20;
+        this.h = canvas_h - 20;
+        this.question = question;
+        this.options = options;
+    }
+    draw (){
+        
+    }
+}
 
 function setup() {
-    createCanvas(canvas_w, canvas_h);
+    createCanvas(windowWidth, windowHeight);
+    canvas_w = windowWidth;
+    canvas_h = windowHeight;
     /*
     for (let i = 0; i < 20; i++) {
         let x = random(width);
