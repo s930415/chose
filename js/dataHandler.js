@@ -3,11 +3,17 @@ exams = [];
 exam = {
     id: '',
     question: '',
-    options: [],
+    options: [
+        {
+            option: '',
+            sort: 0
+        }
+    ],
     user_answer: {
         option_id: ''
     }
 }
+
 /**
  * 取題目(XHR)
  */
